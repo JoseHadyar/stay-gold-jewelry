@@ -1,23 +1,16 @@
 import './App.css'
+import Nav_Bar from './Nav_Bar';
+
+
+
+
 
 const App = () =>{
   return (
 
-    <header>
-      <div class="title">STAY GOLD</div>
-
-      <ul class="nav_bar">
-          <a href="#"><li>Productos</li></a>
-          <a href="#"><li>Promociones</li></a>
-          <a href="#"><li></li></a>
-          <a href="#"><li>Log In</li></a>
-          <a href="#"><li>Contacto</li></a>
-      </ul>
-
-
-    </header>
+    <Nav_Bar/>
+    
   );
 }
-
 
 export default App;
