@@ -1,5 +1,6 @@
-import Nav_Bar from './Nav_Bar';
-import ItemListContainer from './ItemListContainer';
+import Nav_Bar from './components/Nav_Bar';
+import ItemListContainer from './containers/ItemListContainer';
+
 
 
 
@@ -11,6 +12,7 @@ const App = () =>{
     <>
       <Nav_Bar />
       <ItemListContainer greeting="ItemListContainer"/>
+      
      
     </>
   );
