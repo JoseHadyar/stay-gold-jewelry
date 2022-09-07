@@ -1,31 +1,22 @@
-header{
-  background-color: rgba(210, 98, 98, 0.554);
+.container{
+  margin: 2rem;
   display: flex;
+  
 }
 
-.title{
-  font-size: 50px;
-  margin: 1rem;
-  justify-content: center;
-}
 
-ul{
-  text-decoration: none;
-  list-style: none;
-  margin-top: 2.5rem;
-}
-
-.nav_bar li{
-  display: inline;
-  padding: 1rem;
-  font-size: 15px;
+.cardContainer{
+  flex-direction:row;
 
 }
-a{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+
+.cardButton{
+  margin-left: 1rem;
 }
 
-.buy{
-  font-size: 50px;
+
+img {
+  max-width: 250px;
+  max-height: 300px;
 }
+

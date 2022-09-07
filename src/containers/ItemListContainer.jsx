@@ -1,7 +1,8 @@
 import ItemCount from '../components/ItemCount'
+import ItemList from '../components/ItemList';
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const onAdd =(qty) =>{
         alert(`Has agregado ${qty} Items`);
@@ -9,8 +10,8 @@ const ItemListContainer = ({greeting}) => {
 
     return(
         <>
-        <div>{greeting}</div>
-        <ItemCount initial={1} stock={5} onAdd={onAdd} />
+        {/* <ItemCount initial={1} stock={5} onAdd={onAdd} /> */}
+        <ItemList/>
         </>
 
     );
