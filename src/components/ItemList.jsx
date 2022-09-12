@@ -14,20 +14,18 @@ const ItemList = () => {
             .catch(err => console.log(err))
     }, []);
 
-    const report = () => {
-        console.log("Hola mundo")
-    }
-
     return (
         <>
             {
                 data.map(item => (
                     <Item
-
+ 
                         key={item.id}
-                        title={item.title}
-                        material={item.material}
-                        img={item.img} />
+                        // title={item.title}
+                        // material={item.material}
+                        img={item.img} 
+                        // precio={item.precio}
+                        />
                 ))
             }
 

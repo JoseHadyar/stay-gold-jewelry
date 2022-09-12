@@ -1,5 +1,5 @@
-import Nav_Bar from './components/Nav_Bar';
-
+import NavBar from './components/NavBar';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 
 
@@ -11,8 +11,10 @@ const App = () =>{
   return (
 
     <>
-      <Nav_Bar />
-      <ItemListContainer /> 
+      <NavBar />
+      {/* <ItemListContainer />   */}
+      <ItemDetailContainer/>
+      
       
      
     </>

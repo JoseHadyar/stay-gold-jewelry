@@ -2,8 +2,7 @@ import * as React from 'react';
 import '../App.css';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+
 import { useEffect } from 'react';
 
 
@@ -14,12 +13,12 @@ const Item = (props) => {
 
 
     useEffect(()=> {
-        console.log("Componente Item se actualizó")
+        
     }, []);
 
     return (
         <>
-            <div className="container">
+            {/* <div className="container">
 
                 <Card className="cardContainer" sx={{ maxWidth: 245 }}>
 
@@ -37,6 +36,20 @@ const Item = (props) => {
                         <button className="cardButton" size="small">Stock:</button>
                     </CardActions>
                 </Card>
+            </div> */}
+
+
+            <div class="tarjeta__productos">
+                
+                    <img class="tarjeta__productos__imagen" src={props.img} alt=""/>
+                
+                <h3 class="tarjeta__productos__titulo">{props.title}</h3>
+                <p class="tarjeta__productos__parrafo"> {props.material}</p>
+                <span class="tarjeta__producto__monto"> {props.precio} </span>
+                <CardActions>
+                        <button className="cardButton" size="small">Detalle del Producto</button>
+                        <button className="cardButton" size="small">Stock:</button>
+                </CardActions>
             </div>
 
 

@@ -8,15 +8,18 @@ const ItemCount = ({initial, stock, onAdd}) => {
     
     
     const handleClick =() =>{
-        setRate(rate+1);
-        if(rate === 5){setRate(rate)}
-
         
-    }
+        if(rate < stock){
+         setRate(rate+1);
+        }
+        
+    };
 
     const handleClick1 =() =>{
-        setRate(rate-1);
-        if(rate === 1){setRate(rate)}
+        
+        if(rate > 1){
+            setRate(rate-1);
+        }
         
     }
 
@@ -28,7 +31,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
            
         
-           <div>
+           <div className='button__Detail'>
                 <button onClick={handleClick}>
                     <AddIcon/>
                 </button> {rate} Items  

@@ -1,4 +1,4 @@
-import ItemCount from '../components/ItemCount'
+
 import ItemList from '../components/ItemList';
 
 
@@ -10,7 +10,7 @@ const ItemListContainer = () => {
 
     return(
         <>
-        {/* <ItemCount initial={1} stock={5} onAdd={onAdd} /> */}
+       
         <ItemList/>
         </>
 
