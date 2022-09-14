@@ -1,13 +1,43 @@
 body {
-
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   background-size: contain;
 
 }
 
+.uTitle{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+}
+
+.izq{
+  display: flex;
+
+}
+
+.cen{
+  display: flex;
+  margin: 0 auto;
+}
+
+.cen div{
+  padding-right: 4rem;
+  
+}
+
+.category{
+  text-decoration: none;
+  color: white;
+}
+
+
+
 .container {
   margin: 2rem;
   display: flex;
+  text-align:center;
 
 
 }
@@ -16,8 +46,9 @@ body {
 .cardContainer {
   display: flex;
   justify-content: center;
-  margin: 1rem;
+  margin: 0 auto;
   flex-wrap: wrap;
+  
 
 
 }
@@ -38,15 +69,15 @@ img {
   background-color: rgba(66, 56, 56, 0.264);
   color: black;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 250px;
   padding: 1rem;
   margin: 1rem;
   overflow: hidden;
   display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 1rem;
 
 }
 
@@ -60,6 +91,26 @@ img {
   color: rgb(0, 0, 0);
   margin: 3px;
 }
+
+
+.capa__tarjeta__productos{
+  display: inline-block;
+  margin: 0 auto;
+  
+
+}
+
+.capa__tarjeta__productos:hover{
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
 
 
 /* Detalle del producto */
@@ -81,8 +132,8 @@ img {
 }
 
 .detail__image{
-  width: 1200px;
-  height: 800px;
+  width: 120px;
+  height: 100px;
 
 }
 
