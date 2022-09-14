@@ -1,6 +1,6 @@
 const dataFromBD = [
     {
-        id: 1,
+        id: "1",
         stock:50,
         title: "Collar Veneciano",
         material: "Plata 925",
@@ -14,7 +14,7 @@ const dataFromBD = [
 
     },
     {
-        id: 2,
+        id: "2",
         stock:51,
         title: "Reloj Fulano",
         material: "Acero Inoxidable",
@@ -27,7 +27,7 @@ const dataFromBD = [
         }
     },
     {
-        id: 3,
+        id: "3",
         stock:52,
         title: "Aros Star",
         material: "Oro 18k",
@@ -40,7 +40,7 @@ const dataFromBD = [
         }
     },
     {
-        id: 4,
+        id: "4",
         stock:53,
         title: "Reloj Thomas",
         material: "Cuero y Acero Inoxidable",
@@ -54,7 +54,7 @@ const dataFromBD = [
 
     },
     {
-        id: 5,
+        id: "5",
         stock:54,
         title: "Aros Breshan",
         material: "Acero Dorado",
@@ -67,7 +67,7 @@ const dataFromBD = [
         }
     },
     {
-        id: 6,
+        id: "6",
         stock:55,
         title: "Aro Alitas Rosado",
         material: "Acero Rose",
