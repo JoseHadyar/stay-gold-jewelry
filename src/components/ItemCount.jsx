@@ -38,7 +38,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
                 <button onClick={handleClick1}>
                     <RemoveIcon/>
                 </button>
-                <button class="buy" disabled={stock<=0} onClick={()=> onAdd(rate)}>Add to Cart</button>
+                <button class="buy" disabled={initial<=0} onClick={()=> onAdd(rate)}>Add to Cart</button>
             </div>
         
         

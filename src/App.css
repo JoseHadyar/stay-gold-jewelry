@@ -70,7 +70,7 @@ img {
   color: black;
   text-align: center;
   width: 280px;
-  height: 250px;
+  height: 280px;
   padding: 1rem;
   margin: 1rem;
   overflow: hidden;
@@ -87,7 +87,7 @@ img {
 }
 
 .tarjeta__productos__titulo {
-  font-size: 25px;
+  font-size:18px;
   color: rgb(0, 0, 0);
   margin: 3px;
 }
@@ -147,4 +147,28 @@ img {
   display: flex;
   justify-content: center;
   padding-left: 20%;
+}
+
+/* Cart Context */
+.cartTitle{
+  text-align: center;
+}
+.ItemGrid{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.delete{
+ position: absolute;
+ left: 90%;
+
+
+}
+
+
+.remove{
+  left: 20%;
 }
