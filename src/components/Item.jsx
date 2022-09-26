@@ -27,7 +27,7 @@ const Item = (props) => {
 
                     <h3 class="tarjeta__productos__titulo">{props.title}</h3>
                     <p class="tarjeta__productos__parrafo"> {props.material}</p>
-                    <span class="tarjeta__producto__monto"> {props.precio} </span>
+                    <span class="tarjeta__producto__monto"> ${props.precio} </span>
                 </div>
                 </Link>
             </div>

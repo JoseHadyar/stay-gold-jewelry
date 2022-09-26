@@ -8,18 +8,24 @@ const CartContextProvider = ({children}) => {
     const [cartList, setCartList] = useState([]);
 
     const addItem = (item, qty) => {
-       
-        if(cartList.some(el => el.id === item.id)){
 
-            let index = cartList.findIndex(el => el.id === item.id);
-            let product = cartList[index];
+        if(cartList.some(el => el.id === item.id)){
+            
+            let index = cartList.findIndex(el =>  el.id === item.id);
+            let product = cartList[index]; 
             product.qty = product.qty + qty;
 
-        }else{
+
+            const newCartList = [...cartList];
+            newCartList.splice(index, 1, product );
+            setCartList([ ...newCartList ]);
+
+        } else{
             let product = {...item, qty};
-            setCartList([...cartList, product]);
+            setCartList([...cartList, product ]);
         }
     }
+    
 
     const removeItem = (id) => {
         setCartList(cartList.filter(item => item.id !== id))
@@ -29,13 +35,12 @@ const CartContextProvider = ({children}) => {
         setCartList([]);
     }
 
-    
 
 
 
 
     return(
-        <CartContext.Provider  value={{cartList , addItem, removeItem, clear}}>
+        <CartContext.Provider  value={{cartList , addItem, removeItem, clear }}>
 
             {children}
 

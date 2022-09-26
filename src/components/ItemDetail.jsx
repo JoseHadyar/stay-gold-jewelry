@@ -11,9 +11,9 @@ const ItemDetail = ({ data }) => {
     const ctx = useContext(CartContext);
 
     const onAdd = (qty) => {
-        setGoToCart(true);
+        setGoToCart(qty);
         ctx.addItem(data, qty)
-
+        
     };
 
     return (
@@ -24,7 +24,7 @@ const ItemDetail = ({ data }) => {
                     <div className='content'>
                         <h1>{data.title}</h1>
                         <p>Material: {data.material}</p>
-                        <p>{data.precio}ARS</p>
+                        <p>${data.precio}ARS</p>
                         <p>Stock: {data.stock} unidades</p>
                         {
                             goToCart

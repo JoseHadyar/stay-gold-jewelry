@@ -164,11 +164,14 @@ img {
 .delete{
  position: absolute;
  left: 90%;
-
-
 }
 
 
 .remove{
   left: 20%;
+}
+/* cart */
+
+.ordSummary{
+  text-align: center;
 }
