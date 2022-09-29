@@ -83,8 +83,8 @@ const Cart = ({ data }) => {
                 )
             }
 
-            <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                <nav aria-label="main mailbox folders">
+            <Box className="summbox" sx={{ width: '100%', maxWidth: 300, bgcolor: 'background.paper' }}>
+                <div>
                     <List>
                         <ListItem disablePadding>
                             <ListItemButton>
@@ -93,11 +93,22 @@ const Cart = ({ data }) => {
                         </ListItem>
                         <ListItem disablePadding>
                             <ListItemButton>
+                                <ListItemText primary="Subtotal:" />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemText primary="Taxes:" />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
                                 <ListItemText primary="Total:" />
                             </ListItemButton>
                         </ListItem>
                     </List>
-                </nav>
+                </div>
+                <Button className="check">Checkout</Button>
                 <Divider />
             </Box>
 

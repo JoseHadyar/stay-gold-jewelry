@@ -175,3 +175,9 @@ img {
 .ordSummary{
   text-align: center;
 }
+
+.summbox{
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+}
