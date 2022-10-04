@@ -20,13 +20,13 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export default function CustomizedBadges() {
 
   const cartContex = useContext(CartContext);
-  const {cartList} = cartContex; 
+  const {getQty} = cartContex; 
 
 
   return (
     <Link to='/cart'>
       <IconButton aria-label="cart">
-        <StyledBadge badgeContent={cartList.length} color="secondary">
+        <StyledBadge badgeContent={getQty()} color="secondary">
           <ShoppingCartIcon />
         </StyledBadge>
       </IconButton>

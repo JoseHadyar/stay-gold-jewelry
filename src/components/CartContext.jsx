@@ -27,6 +27,18 @@ const CartContextProvider = ({children}) => {
     }
     
 
+    function getTotalPrice(){
+        let total = 0;
+        (cartList.forEach (item => total += item.precio * item.qty))
+        return total;
+    }
+
+    function getQty(){
+        let totalQty = 0;
+        (cartList.forEach (item => totalQty += item.qty))
+        return totalQty;
+    }
+
     const removeItem = (id) => {
         setCartList(cartList.filter(item => item.id !== id))
     }
@@ -40,7 +52,7 @@ const CartContextProvider = ({children}) => {
 
 
     return(
-        <CartContext.Provider  value={{cartList , addItem, removeItem, clear }}>
+        <CartContext.Provider  value={{cartList , addItem, removeItem, clear,getTotalPrice , getQty}}>
 
             {children}
 
