@@ -2,21 +2,20 @@ import { useState, useEffect } from 'react';
 import customFetch from "../utilities/customFetch";
 import ItemDetail from '../components/ItemDetail'
 import dataFromBD from "../utilities/data";
-
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 
 
 const ItemDetailContainer = () => {
 
-    
-    
     const [data, setData] = useState({})
     const {idItem} = useParams();
 
     useEffect(() => {
-        customFetch(2000, dataFromBD.find(item => item.id === idItem))
-            .then(result => setData(result) ) 
-            .catch(err => console.log(err))
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'productos',idItem);
+        getDoc(queryDoc)
+        .then(res => setData({id: res.id, ...res.data()}))
     }, [idItem]);
 
     
